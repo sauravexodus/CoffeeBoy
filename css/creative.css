@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
 html,
 body {
     width: 100%;
@@ -62,6 +64,15 @@ p {
 
 .text-faded {
     color: rgba(255,255,255,.7);
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: italic;
+}
+
+.mainpage-desc {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: italic;    
 }
 
 section {
@@ -524,7 +535,7 @@ body {
   text-decoration: none;
   padding: 7px 14px;
   border: 1px solid #fff;
-  margin: 50px 0 0 0;
+  margin: 40px 0 0 0;
   background-color: transparent;
 }
 
@@ -550,4 +561,16 @@ body {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+
+h1.plantitle {
+    text-transform: uppercase;
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+  font-size: 18px;
+  padding: 10px;
+  background: rgba(114, 69, 10, 0.8);
 }
