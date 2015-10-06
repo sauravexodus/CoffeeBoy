@@ -49,12 +49,18 @@ h6 {
 
 p {
     margin-bottom: 20px;
+    font-family: "Open Sans";
+    font-weight: 300;
     font-size: 16px;
     line-height: 1.5;
 }
 
 .bg-primary {
     background-color: #905424;
+}
+
+.bg-secondary {
+    background-color: #ffeed7;
 }
 
 .bg-dark {
@@ -252,6 +258,7 @@ header .header-content .header-content-inner p {
 
 .section-heading {
     margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .service-box {
@@ -535,7 +542,7 @@ body {
   text-decoration: none;
   padding: 7px 14px;
   border: 1px solid #fff;
-  margin: 40px 0 0 0;
+  margin: 10px 0 0 0;
   background-color: transparent;
 }
 
@@ -573,4 +580,226 @@ h1.plantitle {
   font-size: 18px;
   padding: 10px;
   background: rgba(114, 69, 10, 0.8);
+}
+
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: #f1f1f1;
+  left: 40px;
+  margin-left: -1.5px
+}
+
+.timeline>li {
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 50px
+}
+
+.timeline>li:before,
+.timeline>li:after {
+  content: " ";
+  display: table
+}
+
+.timeline>li:after {
+  clear: both
+}
+
+.timeline>li .timeline-panel {
+  width: 100%;
+  float: right;
+  padding: 0 20px 0 100px;
+  position: relative;
+  text-align: left
+}
+
+.timeline>li .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto
+}
+
+.timeline>li .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto
+}
+
+.timeline>li .timeline-image {
+  left: 0;
+  margin-left: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  background-color: #905424;
+  color: #fff;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center
+}
+
+.timeline>li .timeline-image h4 {
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 14px
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+  float: right;
+  text-align: left;
+  padding: 0 20px 0 100px
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto
+}
+
+.timeline>li:last-child {
+  margin-bottom: 0
+}
+
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit
+}
+
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+  font-size: 14px;
+  color: #666
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+  margin-bottom: 0
+}
+
+@media (min-width:768px) {
+  .timeline:before {
+    left: 50%
+  }
+  .timeline>li {
+    margin-bottom: 100px;
+    min-height: 100px
+  }
+  .timeline>li .timeline-panel {
+    width: 41%;
+    float: left;
+    padding: 0 20px 20px 30px;
+    text-align: right
+  }
+  .timeline>li .timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px
+  }
+  .timeline>li .timeline-image h4 {
+    font-size: 13px;
+    margin-top: 16px;
+    line-height: 18px
+  }
+  .timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    text-align: left;
+    padding: 0 30px 20px 20px
+  }
+}
+
+@media (min-width:992px) {
+  .timeline>li {
+    min-height: 150px
+  }
+  .timeline>li .timeline-panel {
+    padding: 0 20px 20px
+  }
+  .timeline>li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px
+  }
+  .timeline>li .timeline-image h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 26px
+  }
+  .timeline>li.timeline-inverted>.timeline-panel {
+    padding: 0 20px 20px
+  }
+}
+
+@media (min-width:1200px) {
+  .timeline>li {
+    min-height: 170px
+  }
+  .timeline>li .timeline-panel {
+    padding: 0 20px 20px 100px
+  }
+  .timeline>li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px
+  }
+  .timeline>li .timeline-image h4 {
+    margin-top: 40px
+  }
+  .timeline>li.timeline-inverted>.timeline-panel {
+    padding: 0 100px 20px 20px
+  }
+}
+
+.review-detail {
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: italic;
+    color: #444;
+}
+
+.showoff {
+    padding: 60px;
+    margin-bottom: 120px;
+}
+
+.timeline-photo {
+    height: 100%;
+    width: 100%
+}
+
+
+.loader {
+  position: relative;
+  z-index: 10;
+  opacity: 0.9;
+  -webkit-transform: scale(0.9);
+  -webkit-animation: pulse 2s ease-in-out infinite;
+  animation: pulse 2s ease-in-out infinite;
+  }
+@-webkit-keyframes pulse {
+  0% { -webkit-transform: scale(0.7); opacity: 0.5; }
+  50% { -webkit-transform: scale(1.9); opacity: 1; }
+  100% { -webkit-transform: scale(0.7); opacity: 0.5; } 
 }
