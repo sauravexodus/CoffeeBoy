@@ -55,6 +55,14 @@ p {
     line-height: 1.5;
 }
 
+p.contact-navbar {
+  margin-bottom: 2px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
 .bg-primary {
     background-color: #905424;
 }
@@ -862,3 +870,4 @@ section.contact {
     padding: 0px;
     padding-bottom: 100px
 }
+
